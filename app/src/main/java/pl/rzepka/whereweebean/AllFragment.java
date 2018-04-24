@@ -1,27 +1,25 @@
 package pl.rzepka.whereweebean;
 
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ListView;
+        import android.os.Bundle;
+        import android.support.annotation.NonNull;
+        import android.support.annotation.Nullable;
+        import android.support.v4.app.Fragment;
+        import android.util.Log;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+        import java.util.ArrayList;
+        import java.util.Collections;
+        import java.util.Comparator;
 
 public class AllFragment extends Fragment {
-
-    private final static String TAG = "All places";
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.all_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.places_fragment, container, false);
 
         ArrayList<Place> allPlaces = Places.getPlaces();
 

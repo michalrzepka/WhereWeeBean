@@ -13,12 +13,10 @@ import java.util.ArrayList;
 
 public class MuseumsFragment extends Fragment {
 
-    private final static String TAG = "Museums";
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.museums_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.places_fragment, container, false);
 
         ArrayList<Place> museumPlaces = Places.getPlacesFromCategory("Museum");
 

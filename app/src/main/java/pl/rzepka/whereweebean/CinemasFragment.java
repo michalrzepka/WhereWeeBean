@@ -13,12 +13,10 @@ import java.util.ArrayList;
 
 public class CinemasFragment extends Fragment {
 
-    private final static String TAG = "Cinemas";
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.cinemas_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.places_fragment, container, false);
 
         ArrayList<Place> cinemaPlaces = Places.getPlacesFromCategory("Cinema");
 
